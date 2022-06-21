@@ -142,6 +142,7 @@ public class AddToCart {
 	
 	public String txtSuccses () {
 		return txtSuccses.getText();
+		
 	}
 	
 	public boolean txtCompleteOrder () {

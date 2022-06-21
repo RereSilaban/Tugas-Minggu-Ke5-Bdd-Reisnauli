@@ -45,7 +45,7 @@ public class WebEcommerceTest {
 		tunggu(5);
 		driver.quit();
 	}
-	
+	// 1 Login.feature
 	@Given("Customer mengakses url")
 	public void customer_mengakses_url() {
 		driver = DriverSingleton.getDriver();
@@ -64,6 +64,7 @@ public class WebEcommerceTest {
 		tunggu(5);
 	}
 	
+	// 2. AddTocart.feature
 	@When("Customer menambahkan produk jenis women ke cart")
 	public void Customer_memasukan_produk_jenis_women_ke_cart() {
 		addTocart.addToCartWomen(configurationProperties.getQuantityWomen(), configurationProperties.getSizeWomen());
@@ -99,6 +100,8 @@ public class WebEcommerceTest {
 		tunggu(5);
 	}
 	
+	
+	// 3 Payment.features
 	@And("Customer melakukan proses checkout")
 	public void Customer_melakukan_proses_checkout() {
 		addTocart.checkOut();
